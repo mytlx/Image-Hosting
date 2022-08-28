@@ -1,0 +1,54 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+skinparam sequence {
+'ArrowColor DeepSkyBlue
+'ActorBorderColor DeepSkyBlue
+'LifeLineBorderColor blue
+'LifeLineBackgroundColor #A9DCDF
+
+'ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor white
+'ParticipantFontName Impact
+'ParticipantFontSize 17
+'ParticipantFontColor #A9DCDF
+
+ActorBackgroundColor white
+'ActorFontColor DeepSkyBlue
+'ActorFontSize 17
+'ActorFontName Aapex
+}
+
+actor 用户 as user
+participant 工资服务 as salary
+'participant 结算单 as settle
+participant 打款单 as finance
+
+
+user -> salary: 发起提现
+
+'salary -[#red]> settle: 结算单发起结算
+'salary <-- settle: response
+'salary -> salary: 记录结算单状态
+
+alt success
+    salary -> finance: 直接打款
+    salary <-- finance: 打款单id
+
+    salary -> salary: 保存打款单id，记录状态
+
+else failure
+    salary -> WMonitor: 报警
+    alt 接口真的失败了
+        salary -> salary: 人工处理
+    else 打款单实际执行成功了
+        salary <[#red]- finance: 消息回调
+        salary -[#red]> salary: 根据返回的id查询对应打款单中的工资单id进行匹配
+
+    end
+
+end
+user <-- salary: 提现成功
+
+@enduml

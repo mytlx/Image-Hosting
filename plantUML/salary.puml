@@ -1,0 +1,51 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+skinparam sequence {
+'ArrowColor DeepSkyBlue
+'ActorBorderColor DeepSkyBlue
+'LifeLineBorderColor blue
+'LifeLineBackgroundColor #A9DCDF
+
+'ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor white
+'ParticipantFontName Impact
+'ParticipantFontSize 17
+'ParticipantFontColor #A9DCDF
+
+ActorBackgroundColor white
+'ActorFontColor DeepSkyBlue
+'ActorFontSize 17
+'ActorFontName Aapex
+}
+
+actor 用户 as user
+participant 工资服务 as salary
+participant 结算单 as settle
+participant 打款单 as finance
+
+
+user -> salary: 发起提现
+
+salary -[#red]> settle: 结算单发起结算
+salary <-- settle: response
+salary -> salary: 记录结算单状态
+
+salary -[#blue]> finance: 直接打款
+salary <-- finance: 打款单id
+
+salary -> salary: 保存打款单id，记录状态
+
+user <-- salary: 提现成功
+
+====
+
+salary <[#red]- settle: 结算单回调
+salary -> salary: 记录状态等
+
+salary <[#blue]- finance: 打款单回调
+salary -> salary: 记录状态等
+
+
+@enduml
