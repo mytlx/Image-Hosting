@@ -1,1 +1,85 @@
-<mxfile host="app.diagrams.net" modified="2022-08-27T18:15:41.203Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" version="20.2.7" etag="i_kXCRMUcVX0CxCBznvZ" type="github"><diagram id="Vzb52vvJyLiTzDpeeEQz">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-08-28T14:54:02.763Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="J2zBmCNY1jW3i6LYtzsY" version="20.2.7" type="github">
+  <diagram id="Vzb52vvJyLiTzDpeeEQz" name="第 1 页">
+    <mxGraphModel dx="1412" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="110" width="450" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-1" value="&lt;font size=&quot;1&quot; color=&quot;#ffffff&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;结算单&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00CC00;" vertex="1" parent="1">
+          <mxGeometry x="280" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-2" value="&lt;b&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 14px;&quot;&gt;打款单&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB570;" vertex="1" parent="1">
+          <mxGeometry x="440" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-5" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#FFB570;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="499.66" y="210" as="sourcePoint" />
+            <mxPoint x="499.66" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-3" value="&lt;font size=&quot;1&quot; color=&quot;#ffffff&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;工资提现&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5B9BD5;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-6" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#00CC00;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="339.66000000000025" y="210" as="sourcePoint" />
+            <mxPoint x="339.66000000000025" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-7" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="440" as="sourcePoint" />
+            <mxPoint x="1060.0000000000002" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1060" y="360" />
+              <mxPoint x="1060" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-8" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950.0000000000002" y="269.97" as="sourcePoint" />
+            <mxPoint x="950.0000000000002" y="209.97" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="950" y="189.97" />
+              <mxPoint x="950" y="189.97" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-9" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;状态修改及后续操作&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5B9BD5;" vertex="1" parent="1">
+          <mxGeometry x="280" y="400" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-11" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#00CC00;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="339.6600000000001" y="330" as="sourcePoint" />
+            <mxPoint x="339.6600000000001" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-12" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#FFCE9F;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="499.6600000000001" y="330" as="sourcePoint" />
+            <mxPoint x="499.6600000000001" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-18" value="&lt;font color=&quot;#000000&quot;&gt;工资提现&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="280" y="640" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-19" value="结算单" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="280" y="760" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NpCx1A_Dn1VaGwXM7E0q-20" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310.0000000000001" y="690" as="sourcePoint" />
+            <mxPoint x="310.0000000000001" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="720" />
+              <mxPoint x="310" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
